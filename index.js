@@ -1,6 +1,6 @@
-const { loadConfigSync } = require("graphql-config");
-const { printSchema } = require("graphql");
-const { strictEqual } = require("assert");
+import { loadConfigSync } from "graphql-config";
+import { printSchema } from "graphql";
+import { strictEqual } from "assert";
 const config = loadConfigSync({});
 
 const schema = config.getDefault().getSchemaSync();

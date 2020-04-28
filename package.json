@@ -1,6 +1,12 @@
 {
   "dependencies": {
     "graphql": "15.0.0",
-    "graphql-config": "3.0.0"
+    "graphql-config": "3.0.0",
+    "parcel-bundler": "1.12.4",
+    "typescript": "3.8.3"
+  },
+  "scripts": {
+    "js": "parcel build index.js --target node && node dist/index.js",
+    "ts": "node make-ts.js && parcel build index.ts --target node && node dist/index.js"
   }
 }
